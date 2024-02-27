@@ -1,0 +1,143 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f2f2f2;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  margin: 0.8rem 1.2rem;
+  padding: 0;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 80%; /* Ancho predeterminado para pantallas mayores a 500px */
+        
+}
+
+.title-and-select {
+      display: flex;
+      align-items: center;
+      flex: 1;
+    }
+    .title-and-select h1 {
+      margin-right: 10px; /* Ajusta el margen entre el h1 y el select según tu preferencia */
+    }
+    #sistema-select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+/* Estilo para el elemento select al estar enfocado */
+#sistema-select:focus {
+  outline: none;
+  border-color: #007bff; /* Cambia el color del borde cuando el select está enfocado */
+}
+    
+
+h1 {
+  color: #333;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+}
+
+
+/* Estilo para la lista principal */
+#actividades-lista {
+  width: 80%;
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Estilo para los elementos li principales */
+#actividades-lista li {
+  background-color: #f9f9f9;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  color: #000;
+}
+
+/* Estilo para el nombre de usuario */
+.usuario {
+  font-weight: bold;
+  color: #333;
+  word-break: break-word;
+  ms-word-break: break-word;
+}
+
+/* Estilo para el nombre de la actividad */
+.nombre {
+  font-weight: bold;
+  color: #333;
+  word-break: break-word;
+  ms-word-break: break-word;
+}
+
+/* Estilo para la fecha y hora */
+.fechaHora {
+  color: #777;
+  word-break: break-word;
+  ms-word-break: break-word;
+}
+
+ul.hijoActividad li {
+  margin-top: 10px;
+  margin-left: 20px;
+  position: relative;
+  display: flex;
+  align-items: center; /* Centrar verticalmente */
+}
+
+/* Estilo para la información de días pasados */
+.diasPasados {
+  color: #777;
+  margin-left: auto; /* Mover a la derecha */
+  font-size: 0.8em;
+  align-self: center; /* Centrar verticalmente */
+}
+/* Estilo para los elementos de actividad */
+.actividadItem {
+  font-weight: bold;
+  color: #555;
+  line-height: 1.4;
+  padding-right: 2rem;
+  word-break: break-word;
+  ms-word-break: break-word;
+}
+@media only screen and (max-width: 500px) {
+            .container {
+  		margin: 0.8rem 0.8rem;
+  		padding: 0.8rem 0.8rem;
+                width: 85%;
+            }
+	    #actividades-lista {
+  		margin: 0.8rem 0.8rem;
+  		width: 100%;
+	    }
+        }
